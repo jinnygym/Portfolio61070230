@@ -4,14 +4,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: lightblue;
+    background-color: #fee5eb;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #666;
+    background: linear-gradient(#e66465, #9198e5);
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -23,7 +23,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(255, 255, 255);
   }
   
   li {
@@ -31,15 +31,17 @@ ul {
   }
   
   li a {
+    
     display: block;
-    color: white;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover {
-    background-color: #111;
+    background-color: #FCB7D0;
+    color: #9979C1;
   }
 
 @media (max-width: 992px) {
@@ -83,11 +85,28 @@ div.gallery img {
     float: left;
     width: 33.33333%;
 } */
+.carousel,
+.carousel-inner,
+.carousel-item > img {
+  height: 200px;
+}
+
+.carousel-item > img {
+  object-fit: cover;
+}
+
 
 #more {
     display: none;
 }
 
+@media only screen and (min-width: 600px) {
+    .carousel,
+    .carousel-inner,
+    .carousel-item > img {
+      height: 500px;
+    }
+  }
 /* Style the footer */
 
 footer {
