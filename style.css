@@ -1,7 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightblue;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: #666;
     padding: 30px;
     text-align: center;
     font-size: 35px;
     color: white;
+}
+
+@media (max-width: 992px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#blog {
+    text-align: left;
+    border: 3px solid rgb(53, 116, 209);
+    width: 100%;
+    margin: 5px;
+}
+
+#experience {
+    text-align: left;
+    border: 3px solid rgb(53, 116, 209);
+    width: 100%;
+    margin: 5px;
+}
+
+/* .container {
+    text-align: center;
+    border: 3px solid green;
+    width: 100%;
+} */
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
   }
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 33.33333%;
+}
+
+/* Style the footer */
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
