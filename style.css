@@ -18,6 +18,30 @@ header {
     color: white;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
 @media (max-width: 992px) {
     nav, article {
         width: 100%;
@@ -48,14 +72,20 @@ header {
 div.gallery {
     border: 1px solid #ccc;
 }
+
 div.gallery img {
     width: 100%;
     height: auto;
-  }
-.responsive {
+}
+
+/* .responsive {
     padding: 0 6px;
     float: left;
     width: 33.33333%;
+} */
+
+#more {
+    display: none;
 }
 
 /* Style the footer */
