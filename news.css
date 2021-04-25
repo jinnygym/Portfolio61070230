@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(199, 230, 173);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
