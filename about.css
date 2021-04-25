@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(174, 173, 230);
+    background-color: #CBC0D3;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -23,6 +23,15 @@ img {
 
 h2 {
     text-align: center;
+}
+
+header {
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background-color: #8E9AAF;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
 }
 
 ul {
@@ -46,12 +55,12 @@ li a {
 }
 
 li a:hover {
-    background-color: #FCB7D0;
+    background-color: #EFD3D7;
     color: #9979C1;
 }
 
 .resume {
-    background-color: #f9ffdf;
+    background-color: #DEE2FF;
     margin: 20px;
     height: 80vh;
 }

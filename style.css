@@ -4,15 +4,14 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #fee5eb;
+  background-color: #CBC0D3;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
-
 header { /* background: linear-gradient(#e66465, #9198e5); */
   
-  background-color: #777;
+  background-color: #8E9AAF;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -40,7 +39,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #FCB7D0;
+  background-color: #EFD3D7;
   color: #9979C1;
 }
 
@@ -57,14 +56,14 @@ li a:hover {
 
 #blog {
   text-align: left;
-  border: 3px solid rgb(53, 116, 209);
+  border: 3px solid rgb(255, 255, 255);
   width: 100%;
   margin: 5px;
 }
 
 #experience {
   text-align: left;
-  border: 3px solid rgb(53, 116, 209);
+  border: 3px solid rgb(255, 255, 255);
   width: 100%;
   margin: 5px;
 }
@@ -130,7 +129,7 @@ div.gallery img {
 }
 
 footer {
-  background-color: #777;
+  background-color: #8E9AAF;
   padding: 10px;
   text-align: center;
   color: white;

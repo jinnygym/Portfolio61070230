@@ -4,15 +4,18 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(230, 226, 173);
+    background-color: #CBC0D3;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
 
 .header {
+    background-color: #8E9AAF;
+    padding: 30px;
     text-align: center;
-    padding: 32px;
+    font-size: 35px;
+    color: white;
 }
 
 .row {
@@ -56,7 +59,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #FCB7D0;
+    background-color: #EFD3D7;
     color: #9979C1;
 }
 
