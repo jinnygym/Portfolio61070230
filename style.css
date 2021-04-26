@@ -55,7 +55,7 @@ li a:hover {
     height: auto;
   }
   .menu-bar {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
   }
 }
 /*<=576*/
@@ -63,11 +63,12 @@ li a:hover {
   /* .menu-bar {
     display: none;
   } */
-  /* .mini-bar {
-    display: inline-block;
-  } */
+  .active {
+    display: none;
+  }
+  
   .menu-bar {
-    background-color: burlywood;
+    background-color: rgb(255, 255, 255);
   }
 }
 
@@ -129,11 +130,10 @@ div.gallery img {
 
 /* Style the footer */
 .nextPageButton {
-  font-family: Athiti;
   color: #414141;
   background-color:#DEE2FF;
   text-align: center;
-  padding: 2%;
+  padding: 1%;
   font-size: 1.5vw;
   border-radius: 20px;
   width: 15%;
