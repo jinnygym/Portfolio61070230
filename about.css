@@ -57,6 +57,19 @@ header {
     color: white;
 }
 
+@media screen and (max-width: 992px) {
+    .center {
+        width: 30%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 576px) {
+    .center {
+        width: 40%;
+    }
+}
 ul {
     list-style-type: none;
     margin: 0;
