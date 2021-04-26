@@ -15,6 +15,18 @@ body {
     margin: 0;
     padding: 0;
 }
+.resume {
+    background-color: #f6f7ff;
+    margin: 30px;
+    padding: 10px;
+    height: auto;
+}
+
+.aboutme {
+    text-align: left;
+    margin: 20px;
+    font-size: 1.5em;
+} 
 
 img {
     border-radius: 50%;
@@ -77,6 +89,7 @@ li a:hover {
     left: 10px;
     text-decoration: none;
     transition: .5s;
+    margin: 10px;
 }
 
 .previousPageButton:hover {
