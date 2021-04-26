@@ -43,12 +43,34 @@ li a:hover {
   color: #9979C1;
 }
 
-@media (max-width: 992px) {
+
+
+.mini-bar {
+  display: none;
+}
+/*>= 992*/
+@media only screen and (max-width: 991px) { /*576-991*/
   nav, article {
     width: 100%;
     height: auto;
   }
+  .menu-bar {
+    background-color: black;
+  }
 }
+/*<=576*/
+@media only screen and (max-width: 576px) {
+  /* .menu-bar {
+    display: none;
+  } */
+  /* .mini-bar {
+    display: inline-block;
+  } */
+  .menu-bar {
+    background-color: burlywood;
+  }
+}
+
 
 .row {
   margin: 20px;
@@ -103,11 +125,7 @@ div.gallery img {
   display: none;
 }
 
-@media only screen and (min-width: 600px) {
-  .carousel, .carousel-inner, .carousel-item>img {
-    height: 500px;
-  }
-}
+
 
 /* Style the footer */
 .nextPageButton {
@@ -119,7 +137,8 @@ div.gallery img {
   font-size: 1.5vw;
   border-radius: 20px;
   width: 15%;
-  margin-top: 10%;
+  position: absolute;
+  right: 10px;
   text-decoration: none;
   transition: .5s;
 }
@@ -128,6 +147,12 @@ div.gallery img {
   color: #8E9AAF;
   background-color: #ededed;
   transition: .5s;
+}
+
+.tab-next {
+  width: 100%;
+  height: 60px;
+  position: relative;
 }
 
 footer {
