@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/24bf876e73.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -75,20 +76,40 @@
 
     <div class="row">
         <div class="col-sm-6 col-lg-4">
-            <div class="gallery">
-                <a target="_blank" href="./Model/Penguin01.png">
-                    <img src="./Model/Penguin01.png" alt="Lamp01" width="600" height="400">
-                </a>
-                <div class="desc">Penguin 3D Model | ผลงานการออกแบบจากโปรแกรม Maya
+            <div class="gallery" id="myImg">
+                <!-- <a target="_blank" href="./Model/Penguin01.png">
+                    
+                </a> -->
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                class="w3-button w3-display-topright">&times;</span>
+                            <img src="./Model/Penguin01.png" alt="Lamp01" width="600" height="400">
+                        </div>
+                    </div>
+                </div>
+                <img src="./Model/Penguin01.png" alt="Lamp01" width="600" height="400"
+                    onclick="document.getElementById('id01').style.display='block'">
+                <div class="desc">Penguin 3D Model | ผลงานการออกแบบจากโปรแกรม Maya<br>
                     จัดทำโดย : ศุภิสรา ชีวนันทพร</div>
+
             </div>
         </div>
         <div class="col-sm-6 col-lg-4">
-            <div class="gallery">
-                <a target="_blank" href="./Model/Lamp01.png">
-                    <img src="./Model/Lamp01.png" alt="Lamp01" width="600" height="400">
-                </a>
-                <div class="desc">Lamp 3D Model | ผลงานการออกแบบจากโปรแกรม Maya
+            <div class="gallery" id="myImg">
+                <div id="id02" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id02').style.display='none'"
+                                class="w3-button w3-display-topright">&times;</span>
+                            <img src="./Model/Lamp01.png" alt="Lamp01" width="600" height="400">
+                        </div>
+                    </div>
+                </div>
+                <img src="./Model/Lamp01.png" alt="Lamp01" width="600" height="400"
+                    onclick="document.getElementById('id02').style.display='block'">
+                <div class="desc">Lamp 3D Model | ผลงานการออกแบบจากโปรแกรม Maya<br>
                     จัดทำโดย : ศุภิสรา ชีวนันทพร</div>
             </div>
         </div>
@@ -108,20 +129,36 @@
         </div>
         <!-- ---------2------------ -->
         <div class="col-sm-6 col-lg-4">
-            <div class="gallery">
-                <a target="_blank" href="./Model/Scene_3.png">
-                    <img src="./Model/Scene_3.png" alt="Lamp01" width="600" height="400">
-                </a>
+            <div class="gallery" id="myImg">
+                <div id="id03" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id03').style.display='none'"
+                                class="w3-button w3-display-topright">&times;</span>
+                            <img src="./Model/Scene_3.png" alt="Lamp01" width="600" height="400">
+                        </div>
+                    </div>
+                </div>
+                <img src="./Model/Scene_3.png" alt="Lamp01" width="600" height="400"
+                    onclick="document.getElementById('id03').style.display='block'">
                 <div class="desc">Covid-19 doraemon 3D Model | ผลงานการออกแบบจากโปรแกรม Maya
                     จัดทำโดย : ศุภิสรา ชีวนันทพร</div>
             </div>
         </div>
         <div class="col-sm-6 col-lg-4">
-            <div class="gallery">
-                <a target="_blank" href="./Model/Rubik01.png">
-                    <img src="./Model/Rubik01.png" alt="Lamp01" width="600" height="400">
-                </a>
-                <div class="desc">Rubik3D Model | ผลงานการออกแบบจากโปรแกรม Maya
+            <div class="gallery" id="myImg">
+                <div id="id04" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id04').style.display='none'"
+                                class="w3-button w3-display-topright">&times;</span>
+                            <img src="./Model/Rubik01.png" alt="Lamp01" width="600" height="400">
+                        </div>
+                    </div>
+                </div>
+                <img src="./Model/Rubik01.png" alt="Lamp01" width="600" height="400"
+                    onclick="document.getElementById('id04').style.display='block'">
+                <div class="desc">Rubik3D Model | ผลงานการออกแบบจากโปรแกรม Maya <br>
                     จัดทำโดย : ศุภิสรา ชีวนันทพร</div>
             </div>
         </div>
@@ -215,8 +252,8 @@
                     class="fa fa-youtube-play" aria-hidden="true"></i></i></a>
 
             <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/jinnygym" role="button"><i
-                    class="fa fa-github-square" aria-hidden="true"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/jinnygym"
+                role="button"><i class="fa fa-github-square" aria-hidden="true"></i></a>
         </section>
     </footer>
     <script>
@@ -235,9 +272,9 @@
                 moreText.style.display = "inline";
             }
         }
-        function menuham(){
+        function menuham() {
             var ham = document.getElementsByClassName("menu-show")[0];
-            if(ham.style.display == "none"){
+            if (ham.style.display == "none") {
                 ham.style.display = "block"
             }
             else {
