@@ -117,6 +117,12 @@
                     class="fa fa-github-square" aria-hidden="true"></i></a>
         </section>
     </footer>
+    <div id="loading">
+        <div id=loadElement>
+          <div id="loader"></div>
+          <div id="loaderText">Loading ... </div>
+        </div>
+      </div>
     <script>
         function menuham(){
             var ham = document.getElementsByClassName("menu-show")[0];
@@ -127,6 +133,14 @@
                 ham.style.display = "none"
             }
         }
+        window.addEventListener("load", function () {
+        var loading = document.getElementById("loading");
+        loading.style.opacity = 0;
+        setTimeout(destroyLoading, 1000);
+        function destroyLoading(params) {
+          document.body.removeChild(loading);
+        }
+    });
     </script>
 </body>
 
