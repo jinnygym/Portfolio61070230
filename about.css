@@ -98,9 +98,20 @@ header {
     color: white;
 }
 
-@media screen and (max-width: 992px) {
+.ham {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
     .center {
         width: 30%;
+    }
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+    .menu-bar {
+        background-color: rgb(255, 255, 255);
     }
     #skill {
         margin: 10px;
@@ -112,11 +123,18 @@ header {
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
 @media screen and (max-width: 576px) {
     .center {
         width: 40%;
+    }
+    .ham {
+        display: block;
+    }
+    .active {
+        display: none;
+    }
+    .menu-bar {
+        background-color: rgb(255, 255, 255);
     }
     #skill {
         margin: 10px;

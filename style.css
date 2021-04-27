@@ -51,9 +51,8 @@ li a:hover {
 .ham {
   display: none;
 }
-/*<= 992*/
 
-@media only screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   /*576-991*/
   nav, article {
     width: 100%;
@@ -65,8 +64,7 @@ li a:hover {
 }
 
 /*<=576*/
-
-@media only screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .ham {
     display: block;
   }

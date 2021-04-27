@@ -133,15 +133,42 @@ li a:hover {
     max-height: 120px;
 }
 
-@media(max-width: 992px) {
+.ham {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    /*576-991*/
     .card {
         margin: 20px;
+    }
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+    .menu-bar {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+/*<=576*/
+
+@media screen and (max-width: 576px) {
+    .ham {
+        display: block;
+    }
+    .active {
+        display: none;
+    }
+    .menu-bar {
+        background-color: rgb(255, 255, 255);
     }
 }
 
 .blank {
     height: 80px;
 }
+
 footer {
     background-color: #8E9AAF;
     padding: 10px;
