@@ -48,7 +48,10 @@ li a:hover {
   display: none;
 }
 
-/*>= 992*/
+.ham {
+  display: none;
+}
+/*<= 992*/
 
 @media only screen and (max-width: 991px) {
   /*576-991*/
@@ -64,9 +67,9 @@ li a:hover {
 /*<=576*/
 
 @media only screen and (max-width: 576px) {
-  /* .menu-bar {
-    display: none;
-  } */
+  .ham {
+    display: block;
+  }
   .active {
     display: none;
   }
@@ -153,6 +156,15 @@ div.gallery img {
   height: 60px;
   margin: 10px;
   position: relative;
+}
+
+.link-a {
+    color: #000;
+    text-decoration: none;
+}
+.link-a:hover {
+  color: #c0265a;
+  text-decoration: none;
 }
 
 footer {

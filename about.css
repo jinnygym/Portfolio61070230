@@ -62,10 +62,11 @@ h2 {
 #skill {
     text-align: center;
     background-color: #f6f7ff;
-    width: 100%;
+    width: 45%;
+    margin-top: 5px;
     margin: 5px;
-    margin-left: 3%;
     height: auto;
+    display: inline-block;
 }
 
 .MySkill {
@@ -75,10 +76,17 @@ h2 {
 #achievement {
     text-align: left;
     background-color: #f6f7ff;
-    width: 100%;
+    width: 45%;
     margin: 5px;
-    margin-right: 3%;
+    margin-top: 5px;
     height: auto;
+    display: inline-block;
+}
+
+.row {
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 header {
@@ -95,7 +103,12 @@ header {
         width: 30%;
     }
     #skill {
-        display: block;
+        margin: 10px;
+        width: 90%;
+    }
+    #achievement {
+        margin-top: 10px;
+        width: 90%;
     }
 }
 
@@ -106,7 +119,12 @@ header {
         width: 40%;
     }
     #skill {
-        display: block;
+        margin: 10px;
+        width: 90%;
+    }
+    #achievement {
+        margin-top: 10px;
+        width: 90%;
     }
 }
 

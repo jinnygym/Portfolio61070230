@@ -31,12 +31,19 @@
 
     </nav>
     <ul class="menu-bar">
-        <li><a class="non-active"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+        <li><a class="ham" onclick="menuham()"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a class="active" href="portfolio.html">Portfolio</a></li>
-        <li><a class="active" href="about.html">About me</a></li>
+        <li><a class="active" href="about.html">About</a></li>
         <li><a class="active" href="contact.html">Contact</a></li>
     </ul>
+    <ul class="menu-show" style="display: none;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
     <div class="container">
         <div class="row">
             <div id="blog" class="col-sm-12 col-lg">
@@ -75,7 +82,8 @@
                 <a target="_blank" href="./Model/Penguin01.png">
                     <img src="./Model/Penguin01.png" alt="Lamp01" width="600" height="400">
                 </a>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Penguin 3D Model | ผลงานการออกแบบจากโปรแกรม Maya
+                    จัดทำโดย : ศุภิสรา ชีวนันทพร</div>
             </div>
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -83,7 +91,8 @@
                 <a target="_blank" href="./Model/Lamp01.png">
                     <img src="./Model/Lamp01.png" alt="Lamp01" width="600" height="400">
                 </a>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Lamp 3D Model | ผลงานการออกแบบจากโปรแกรม Maya
+                    จัดทำโดย : ศุภิสรา ชีวนันทพร</div>
             </div>
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -106,15 +115,17 @@
                 <a target="_blank" href="./Model/Scene_3.png">
                     <img src="./Model/Scene_3.png" alt="Lamp01" width="600" height="400">
                 </a>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Covid-19 doraemon 3D Model | ผลงานการออกแบบจากโปรแกรม Maya
+                    จัดทำโดย : ศุภิสรา ชีวนันทพร</div>
             </div>
         </div>
         <div class="col-sm-6 col-lg-4">
             <div class="gallery">
-                <a target="_blank" href="./Model/Scene_4.png">
+                <a target="_blank" href="./Model/Rubik01.png">
                     <img src="./Model/Rubik01.png" alt="Lamp01" width="600" height="400">
                 </a>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">Rubik3D Model | ผลงานการออกแบบจากโปรแกรม Maya
+                    จัดทำโดย : ศุภิสรา ชีวนันทพร</div>
             </div>
         </div>
         <div class="col-sm-6 col-lg-4">
@@ -146,10 +157,17 @@
                     มีการใส่กระดูกให้ตัวปั้นสำหรับการเคลื่อนไหวมาเรียบร้อย หน้าที่ของ animator คือการทำท่าทางการขยับของ
                     character ให้ออกมาดูเป็นธรรมชาติที่สุด ซึ่งก็จะมีหลายขั้นตอนในการทำงาน
 
+                    ทักษะและความสามารถที่ต้องใช้ คือ<span id="dots">...</span><span
+                        id="more">ต้องมีความคิดสร้างสรรค์และช่างสังเกต เช่น เวลาเรายิ้ม ใบหน้าเราขยับอย่างไรบ้าง เป็นต้น
+                        เพราะในการทำ
+                        animation นั้นต้องเอาใจใส่ในทุกรายละเอียดเพื่อให้ภาพออกมาสวยงาม
+                        ต้องอดทนเพราะกว่าจะงานจะเสร็จสมบูรณ์จะมีขั้นตอนการทำที่เยอะมากและต้องอาศัยความละเอียดอย่างมาก
+                        <br>
 
-                    metro<span id="dots">...</span><span id="more">politan area of over 13 million inhabitants.
-                        Standing on the River Thames, London has been a major settlement for two millennia, its history
-                        going back to its founding by the Romans, who named it Londinium.</span>
+                        <a href="https://www.a-chieve.org/information/detail/3d-animator/" class="link-a">ที่มา :
+                            https://www.a-chieve.org/information/detail/3d-animator/</a>
+                    </span>
+
                 </p>
                 <button onclick="myFunction()" id="myBtn" type="button" class="btn btn-secondary">Read more</button>
             </div>
@@ -218,6 +236,15 @@
                 dots.style.display = "none";
                 btnText.innerHTML = "Read less";
                 moreText.style.display = "inline";
+            }
+        }
+        function menuham(){
+            var ham = document.getElementsByClassName("menu-show")[0];
+            if(ham.style.display == "none"){
+                ham.style.display = "block"
+            }
+            else {
+                ham.style.display = "none"
             }
         }
     </script>
